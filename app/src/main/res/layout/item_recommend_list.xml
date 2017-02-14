@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/touch_bg">
+
+    <ImageView
+        android:id="@+id/ivRecommendCover"
+        android:layout_width="45dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/ivRecommendCover"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvRecommendTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="宦官哈哈"
+            android:textColor="@color/common_h1"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tvRecommendShort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="xxxxxxxxxxxxxxxx"
+            android:textColor="@color/common_h2"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivTopLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/label_book_top"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <CheckBox
+        android:id="@+id/ckBoxSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+</RelativeLayout>
